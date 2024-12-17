@@ -1,0 +1,252 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D22630;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar li a:hover {
+    color: #f3f3f3;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url(../images/hero_sect.png); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff3e3e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #cc3232;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #D22630;
+    border: 2px solid #D22630;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f3f3;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    color: #D22630;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-us ul li {
+    font-size: 18px;
+    color: #333;
+    background: #fff;
+    padding: 10px 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.about-us ul li::before {
+    content: '🎮';
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ff4500;
+}
+
+
+/* Tournaments Section */
+.tournaments, .articles {
+    padding: 40px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.tournaments h2, .articles h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #D22630;
+}
+
+.tournament-container, .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tournament-card, .articles-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.tournament-card:hover, .articles-card:hover {
+    transform: translateY(-5px);
+}
+
+.tournament-card img, .articles-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tournament-content, .articles-content{
+    padding: 15px;
+}
+
+.tournament-content h3, .articles-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tournament-content p, .articles-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.join-now,
+.view-details, .view-now {
+    display: inline-block;
+    font-size: 14px;
+    color: #007acc;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.join-now:hover,
+.view-details:hover, .view-now:hover {
+    color: #005a99;
+    border-color: #005a99;
+}
+.site-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D22630;
+    color: white;
+    margin-top: 20px;
+}

@@ -1,0 +1,126 @@
+/* General Styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D22630;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar li a:hover {
+    color: #f3f3f3;
+}
+
+/* News Section */
+.news-section,.announcement-section {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h2, .announcement-section h2 {
+    font-size: 32px;
+    color: #D22630;
+    margin-bottom: 20px;
+}
+
+.tournament-results, .game-announcements {
+    margin-top: 30px;
+}
+
+.tournament-results h3, .game-announcements h3 {
+    font-size: 24px;
+    color: #7e0303;
+    margin-bottom: 15px;
+}
+
+.result-card, .announcement-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-card img, .announcement-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.result-details, .announcement-details {
+    text-align: left;
+}
+
+.result-details h3, .announcement-details h3 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.result-details h4, .announcement-details h4 {
+    font-size: 20px;
+    color: #D22630;
+    margin: 8px;
+    margin-left: 0px;
+
+}
+.result-details p, .announcement-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #D22630;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

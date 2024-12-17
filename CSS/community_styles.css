@@ -1,0 +1,159 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D22630;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar li a:hover {
+    color: #f3f3f3;
+}
+/* Community Section */
+.community {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.community h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #D22630;
+}
+
+.communities-list {
+    margin-bottom: 30px;
+}
+
+.communities-list h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #7e0303;
+}
+
+.community-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.community-card h4 {
+    font-size: 20px;
+    color: #510a0d;
+    margin-bottom: 5px;
+}
+
+.community-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.discord-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #007acc;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.discord-link:hover {
+    color: #005a99;
+    border-color: #005a99;
+}
+
+/* Events Section */
+.events {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.events h2{
+    text-align: center;
+}
+
+.events h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events li {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.events li strong {
+    font-size: 16px;
+    color: #510a0d;
+}
+
+.events li em {
+    font-size: 12px;
+    color: #777;
+    margin-left: 5px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D22630;
+    color: white;
+    margin-top: 20px;
+}
