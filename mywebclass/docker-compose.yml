@@ -3,7 +3,7 @@ version: "3.8"
 services:
   webizly:
     image: kaw393939/mywebsite:master 
-    container_name: mywebclass 
+    container_name: njitesports 
     pull_policy: always
     restart: always
     networks:
@@ -15,11 +15,11 @@ services:
       - com.centurylinklabs.watchtower.enable=true
       - traefik.enable=true
       - traefik.docker.network=traefik
-      - traefik.http.routers.mywebclass.rule=Host(`www.mywebclass.org`) || Host(`mywebclass.org`)
-      - traefik.http.routers.mywebclass.entrypoints=https
-      - traefik.http.routers.mywebclass.tls=true
-      - traefik.http.routers.mywebclass.tls.certresolver=simple-resolver
-      - traefik.http.services.mywebclass.loadbalancer.server.port=80
+      - traefik.http.routers.njitesports.rule=Host(`njitesports.me`) || Host(`njitesports.me`)
+      - traefik.http.routers.njitesports.entrypoints=https
+      - traefik.http.routers.njitesports.tls=true
+      - traefik.http.routers.njitesports.tls.certresolver=simple-resolver
+      - traefik.http.services.njitesports.loadbalancer.server.port=80
 networks:
   traefik:
       name: traefik
